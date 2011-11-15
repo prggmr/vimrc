@@ -18,6 +18,10 @@
 
     set spell   " Enable spell checking
 
+    set ruler   " Display line and column information
+
+    set clipboard=unnamed
+
 " }
 
 " Key Modifiers {
@@ -59,7 +63,7 @@ set smarttab
 
 " Turn on syntax highlighting and set default colorscheme
 syntax on
-colorscheme xoria256
+colorscheme rastafari 
 
 " Autoopen NerdTree
 autocmd VimEnter * NERDTree
@@ -68,7 +72,13 @@ autocmd BufEnter * NERDTreeMirror
 
 " NERDTree options
 " Ignore python compiled files and .DS_STORE
-left NERDTreeIgnore=['\*.pyc$','*.DS']
+let NERDTreeIgnore=['\.pyc','\.DS_Store']
+" Show Bookmarks panel
+let NERDTreeShowBookmarks=1
+" Show Hidden files
+let NERDTreeShowHidden=1
+" Highlight current nerd line
+let NERDTreeHighlightCursorline=1
 
 " Turn on line numbers
 set nu
