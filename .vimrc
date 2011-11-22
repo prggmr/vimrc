@@ -21,7 +21,31 @@
     set ruler   " Display line and column information
 
     set clipboard=unnamed
+    
+    " Ignore case when searching
+    set ignorecase
 
+    " Show matching braces
+    set showmatch
+
+    " Disable auto backup
+    set nobackup
+    set nowb
+    set noswapfile
+
+    " Tabs instead of spaces
+    set tabstop=4
+    set shiftwidth=4
+    set expandtab
+    set smarttab
+
+    " Turn on syntax highlighting  
+    syntax on
+    " Set default color scheme
+    colorscheme rastafari 
+
+    " Turn on line numbers
+    set nu
 " }
 
 " Key Modifiers {
@@ -43,44 +67,26 @@
 
 " } 
 
-" Ignore case when searching
-set ignorecase
+" NERTree {
 
-" Show matching braces
-set showmatch
+    " Autoopen NerdTree
+    autocmd VimEnter * NERDTree
+    autocmd VimEnter * wincmd p
 
-" Disable auto backup
-set nobackup
-set nowb
-set noswapfile
+    " Open tab with mirror
+    " autocmd BufEnter * NERDTreeMirror
 
-" Tabs instead of spaces
-set tabstop=4
-set shiftwidth=4
-set expandtab
-set smarttab
+    " NERDTree options
+    " Ignore python compiled files and .DS_STORE
+    let NERDTreeIgnore=['\.pyc','\.DS_Store']
+    " Show Bookmarks panel
+    let NERDTreeShowBookmarks=1
+    " Show Hidden files
+    let NERDTreeShowHidden=1
+    " Highlight current nerd line
+    let NERDTreeHighlightCursorline=1
 
-" Turn on syntax highlighting and set default colorscheme
-syntax on
-colorscheme rastafari 
-
-" Autoopen NerdTree
-autocmd VimEnter * NERDTree
-autocmd VimEnter * wincmd p
-autocmd BufEnter * NERDTreeMirror
-
-" NERDTree options
-" Ignore python compiled files and .DS_STORE
-let NERDTreeIgnore=['\.pyc','\.DS_Store']
-" Show Bookmarks panel
-let NERDTreeShowBookmarks=1
-" Show Hidden files
-let NERDTreeShowHidden=1
-" Highlight current nerd line
-let NERDTreeHighlightCursorline=1
-
-" Turn on line numbers
-set nu
+" }
 
 " MACVIM GUI Specific {
 if has('gui_running')
