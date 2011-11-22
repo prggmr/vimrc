@@ -53,17 +53,17 @@
     let mapleader = ","    " Use the , as our key leader
     
     " Quick Save
-    nmap <leader>w :w!     
-    " Move buffer using ,+Space
-    nmap <leader>  <C-W>W
+    nmap <leader>w :w!
+    " Move buffer using double tap (,+,)
+    nmap <leader>, <C-W>W
     " Move Previous tab (,+-)
     nmap <leader>- :tabp
     " Move Next tab (,++)
     nmap <leader>+ :tabn
     " Move next page (,+f)
-    nmap <leader>F <C-F>
+    nmap <leader>f <C-F>
     " Move previous page (,+b)
-    nmap <leader>B <C-B>
+    nmap <leader>b <C-B>
 
 " } 
 
