@@ -43,7 +43,6 @@
 
 " } 
 
-
 " Ignore case when searching
 set ignorecase
 
@@ -83,3 +82,13 @@ let NERDTreeHighlightCursorline=1
 " Turn on line numbers
 set nu
 
+" MACVIM GUI Specific {
+if has('gui_running')
+    " Set Courier Font
+    set guifont=Courier
+    " Add a little spacing between lines
+    set linespace=1
+    " Set the transparency of the background window to expose the rasta lion
+    set transparency=30
+endif
+" }
