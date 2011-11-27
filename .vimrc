@@ -42,7 +42,7 @@
     " Turn on syntax highlighting  
     syntax on
     " Set default color scheme
-    colorscheme rastafari 
+    colorscheme jellybeans 
 
     " Turn on line numbers
     set nu
@@ -70,8 +70,9 @@
 " NERTree {
 
     " Autoopen NerdTree
-    autocmd VimEnter * NERDTree
-    autocmd VimEnter * wincmd p
+    " This is disabled
+    " autocmd VimEnter * NERDTree
+    " autocmd VimEnter * wincmd p
 
     " Open tab with mirror
     " autocmd BufEnter * NERDTreeMirror
@@ -95,6 +96,6 @@ if has('gui_running')
     " Add a little spacing between lines
     set linespace=1
     " Set the transparency of the background window to expose the rasta lion
-    set transparency=30
+    set transparency=5
 endif
 " }

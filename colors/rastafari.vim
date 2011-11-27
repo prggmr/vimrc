@@ -1,4 +1,5 @@
 " Vim color file
+"
 " Maintainer:  Dominique Pelle <dominique.pelle at gmail.com>
 " Last Change: 25 Mar 2008
 " URL:         http://dominique.pelle.free.fr/rastafari.vim
@@ -12,7 +13,7 @@ endif
 
 let g:color_name="rastafari"
 " Normal colors {{{1
-hi Normal      guifg=#aaaaaa guibg=#000000 gui=none term=none     cterm=none    ctermfg=gray
+hi Normal      guifg=#aaaaaa guibg=#0a0a0a gui=none term=none     cterm=none    ctermfg=gray
 hi Ignore      guifg=#888888 guibg=bg      gui=bold term=bold     cterm=bold    ctermfg=darkgrey
 hi Comment     guifg=#00aa00 guibg=bg      gui=none term=none     cterm=none    ctermfg=darkgreen
 hi LineNr      guifg=#ffff00 guibg=bg      gui=none term=none     cterm=none    ctermfg=yellow
